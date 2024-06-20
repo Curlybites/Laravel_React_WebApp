@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Laravel React</title>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    @vite('resources/css/app.css')
 </head>
 
 <body>
@@ -14,6 +16,11 @@
     </div>
     @viteReactRefresh
     @vite('resources/js/app.js')
+
 </body>
+
+<script>
+    window.env = '{{ env('VITE_API_BASE_URL') }}'
+</script>
 
 </html>
