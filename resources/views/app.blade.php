@@ -7,6 +7,7 @@
 
     <title>Blogg.</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="shortcut icon" href="https://static.thenounproject.com/png/1022416-200.png" type="image/x-icon">
     @vite('resources/css/app.css')
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
