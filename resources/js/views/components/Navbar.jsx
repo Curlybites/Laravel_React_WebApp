@@ -44,7 +44,7 @@ export default function Navbar() {
 
                 <Link className="ml-5 text-sm">Sign In</Link>
 
-                <label className="swap swap-rotate mx-5">
+                <label className="swap swap-rotate ml-5 mr-9">
                     {/* this hidden checkbox controls the state */}
                     <input
                         type="checkbox"
