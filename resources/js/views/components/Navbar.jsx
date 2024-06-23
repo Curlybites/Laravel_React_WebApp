@@ -1,11 +1,30 @@
 import React from "react";
 
+import { FaPenNib } from "react-icons/fa";
+import { Link } from "react-router-dom";
+
 export default function Navbar() {
     return (
-        <div className="navbar bg-base-100">
-            <div className="flex-1">
-                <a className="btn btn-ghost text-xl">daisyUI</a>
+        <div className="navbar border-b-2 bg-base-100">
+            <div className="flex-1 items-center justify-start">
+                <a className="btn btn-ghost text-xl ml-9 relative font-bold">
+                    <FaPenNib className="absolute left-0 " />
+                    <span className="pl-1">Blogg.</span>
+                </a>
+
+                <ul className="flex items-center justify-start">
+                    <li>
+                        <Link className="text-sm ">Category</Link>
+                    </li>
+                    <li>
+                        <Link className="text-sm ml-2">Article</Link>
+                    </li>
+                    <li>
+                        <Link className="text-sm ml-2">Latest</Link>
+                    </li>
+                </ul>
             </div>
+
             <div className="flex-none">
                 <button className="btn btn-square btn-ghost">
                     <svg
