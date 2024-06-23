@@ -7,6 +7,7 @@ export default function MainContent() {
                 <img
                     src="https://miro.medium.com/v2/resize:fit:3200/format:webp/1*c7CPwH-Dd-z-EuXCWt-nTQ.png"
                     alt="Album"
+                    className=""
                 />
             </figure>
             <div className="w-1/2 flex flex-col mx-8">
@@ -31,7 +32,7 @@ export default function MainContent() {
                         <p className="mt-1 text-blue-500 text-sm">
                             Anthony Esquilona
                         </p>
-                        <p className="text-sm">Jun 23</p>
+                        <p className="text-xs mt-1 text-slate-400">Jun 23</p>
                     </div>
                 </div>
             </div>
