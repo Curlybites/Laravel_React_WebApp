@@ -26,7 +26,7 @@ export default function Navbar() {
             </div>
 
             <div className="flex-none">
-                <label className="input input-bordered flex items-center gap-2 rounded-full">
+                <label className="input input-sm input-bordered flex items-center gap-2 rounded-full">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 16 16"
@@ -39,7 +39,7 @@ export default function Navbar() {
                             clipRule="evenodd"
                         />
                     </svg>
-                    <input type="text" className="grow" placeholder="Search" />
+                    <input type="text" className="grow " placeholder="Search" />
                 </label>
 
                 <Link className="ml-5 text-sm">Sign In</Link>
@@ -48,7 +48,7 @@ export default function Navbar() {
                     {/* this hidden checkbox controls the state */}
                     <input
                         type="checkbox"
-                        className="theme-controller"
+                        className="theme-controller "
                         value="synthwave"
                     />
 
