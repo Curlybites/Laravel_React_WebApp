@@ -45,87 +45,87 @@ const Theme = [
     },
     {
         color: "halloween",
-        name: "halloween",
+        name: "Halloween",
     },
     {
         color: "garden",
-        name: "garden",
+        name: "Garden",
     },
     {
         color: "forest",
-        name: "forest",
+        name: "Forest",
     },
     {
         color: "aqua",
-        name: "aqua",
+        name: "Aqua",
     },
     {
         color: "lofi",
-        name: "lofi",
+        name: "Lofi",
     },
     {
         color: "pastel",
-        name: "pastel",
+        name: "Pastel",
     },
     {
         color: "fantasy",
-        name: "fantasy",
+        name: "Fantasy",
     },
     {
         color: "wireframe",
-        name: "wireframe",
+        name: "Wireframe",
     },
     {
         color: "black",
-        name: "black",
+        name: "Black",
     },
     {
         color: "luxury",
-        name: "luxury",
+        name: "Luxury",
     },
     {
         color: "dracula",
-        name: "dracula",
+        name: "Dracula",
     },
     {
         color: "cmyk",
-        name: "cmyk",
+        name: "Cmyk",
     },
     {
         color: "autumn",
-        name: "autumn",
+        name: "Autumn",
     },
     {
         color: "business",
-        name: "business",
+        name: "Business",
     },
     {
         color: "acid",
-        name: "acid",
+        name: "Acid",
     },
     {
         color: "lemonade",
-        name: "lemonade",
+        name: "Lemonade",
     },
     {
         color: "night",
-        name: "night",
+        name: "Night",
     },
     {
         color: "coffee",
-        name: "coffee",
+        name: "Coffee",
     },
     {
         color: "winter",
-        name: "winter",
+        name: "Winter",
     },
     {
         color: "dim",
-        name: "dim",
+        name: "Dim",
     },
     {
         color: "sunset",
-        name: "sunset",
+        name: "Sunset",
     },
 ];
 

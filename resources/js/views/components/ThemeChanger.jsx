@@ -10,14 +10,16 @@ export default function ThemeChanger() {
     return (
         <div className="ml-5  ">
             <details className="dropdown dropdown-end">
-                <summary className="btn btn-ghost m-1 font-normal text-sm">Theme</summary>
+                <summary className="btn btn-ghost m-1 font-normal text-sm">
+                    Theme
+                </summary>
                 <ul className="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
                     <select
                         data-choose-theme
                         className="select select-sm w-full max-w-xs "
                     >
                         {Themes.map((theme, index) => (
-                            <option value={theme.color} key={index}>
+                            <option value={theme.color} key={index} >
                                 {theme.name}
                             </option>
                         ))}

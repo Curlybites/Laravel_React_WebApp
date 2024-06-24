@@ -8,10 +8,10 @@ export default function Navbar() {
     return (
         <div className="navbar border-b-2 bg-base-100">
             <div className="flex-1 items-center justify-start">
-                <a className="btn btn-ghost text-xl ml-9 relative font-bold">
+                <Link to={'/'}  className="flex items-center justify-center p-4 text-xl ml-9 relative font-bold">
                     <FaPenNib className="absolute left-0 " />
                     <span className="pl-1">Blogg.</span>
-                </a>
+                </Link>
 
                 <ul className="flex items-center justify-start">
                     <li>
@@ -44,7 +44,7 @@ export default function Navbar() {
                 </label>
                 <ThemeChanger />
                 
-                <Link className="mr-9 ml-5 text-sm">Sign In</Link>
+                <Link  to={'/Login'} className="mr-9 ml-5 text-sm">Sign In</Link>
 
            
             </div>
