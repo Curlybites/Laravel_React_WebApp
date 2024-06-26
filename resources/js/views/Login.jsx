@@ -24,6 +24,12 @@ export default function Login() {
                     <span className="font-bold">Blogg.</span>
                 </div>
 
+                <button className="border-2 border-current rounded-lg p-2">
+                   Sign in with Google 
+                </button>
+
+                <div className="divider">or</div>
+                
                 <form action="" className="flex flex-col gap-3">
                     <input
                         type="Email"
@@ -42,6 +48,8 @@ export default function Login() {
                         Sign In
                     </button>
                 </form>
+
+                <Link to={'/Register'} className="text-center text-sm">Do you have an account? <span className="text-blue-500">Register</span></Link>
             </div>
         </div>
     );
