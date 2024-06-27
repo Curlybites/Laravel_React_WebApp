@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function AdminSidebar() {
     return (
-        <div>
+        <div className="flex">
             <div className="drawer lg:drawer-open">
                 <input
                     id="my-drawer-2"
@@ -27,13 +28,18 @@ export default function AdminSidebar() {
                     <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4">
                         {/* Sidebar content here */}
                         <li>
-                            <a>Sidebar Item 1</a>
+                            <Link>Dashboard</Link>
                         </li>
                         <li>
-                            <a>Sidebar Item 2</a>
+                            <Link>Category</Link>
                         </li>
                     </ul>
                 </div>
+            </div>
+
+
+            <div className="container">
+                <h1 className="">Hello world</h1>
             </div>
         </div>
     );

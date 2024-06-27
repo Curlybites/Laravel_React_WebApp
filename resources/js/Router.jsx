@@ -21,6 +21,7 @@ const router = createBrowserRouter([
         path: "/Admin",
         element: <AdminPage />,
     },
+    
 ]);
 
 export default router;
