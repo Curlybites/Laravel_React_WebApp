@@ -1,40 +1,47 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { FaPenNib } from "react-icons/fa";
+import { MdHomeFilled } from "react-icons/md";
+import { FaGripVertical } from "react-icons/fa";
+import AdminNavbar from "./AdminNavbar";
+import ThemeChanger from "../../components/ThemeChanger";
+import { FaPalette } from "react-icons/fa";
 
 export default function AdminSidebar() {
     return (
-        <div>
-            <div className="drawer lg:drawer-open">
-                <input
-                    id="my-drawer-2"
-                    type="checkbox"
-                    className="drawer-toggle"
-                />
-                <div className="drawer-content flex flex-col items-center justify-center">
-                    {/* Page content here */}
-                    <label
-                        htmlFor="my-drawer-2"
-                        className="btn btn-primary drawer-button lg:hidden"
-                    >
-                        Open drawer
-                    </label>
+        <div className="flex ">
+            <div className="h-screen w-80 bg-slate-50">
+                <div className="logo text-2xl font-bold flex items-center justify-center m-4">
+                    <FaPenNib />
+                    <span>Blogg.</span>
                 </div>
-                <div className="drawer-side">
-                    <label
-                        htmlFor="my-drawer-2"
-                        aria-label="close sidebar"
-                        className="drawer-overlay"
-                    ></label>
-                    <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4">
-                        {/* Sidebar content here */}
-                        <li>
-                            <a>Sidebar Item 1</a>
-                        </li>
-                        <li>
-                            <a>Sidebar Item 2</a>
-                        </li>
-                    </ul>
-                </div>
+
+                <ul className="m-4">
+                    <li>
+                        <Link className="flex items-center justify-start hover:bg-slate-200 rounded-md p-2 pl-4 ">
+                            <MdHomeFilled className="text-xl  fixed" />
+                            <span className=" text-sm pt-1 ml-9">
+                                Dashboard
+                            </span>
+                        </Link>
+                    </li>
+
+                    <li>
+                        <Link className="flex items-center justify-start hover:bg-slate-200 rounded-md  p-2 pl-4">
+                            <FaGripVertical className="text-xl mr-3 " />
+                            <span className="text-sm pt-1">Category</span>
+                        </Link>
+                    </li>
+                    
+                
+
+                    {/* <li className="flex items-center justify-start hover:bg-slate-200 rounded-md  p-2 pl-4">
+                        <FaPalette className="text-xl mr-3 " />
+                        
+                    </li> */}
+                </ul>
             </div>
+            <AdminNavbar />
         </div>
     );
 }

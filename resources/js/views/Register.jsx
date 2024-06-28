@@ -32,6 +32,12 @@ export default function Register() {
 
                 <form action="" className="flex flex-col gap-3">
                     <input
+                        type="text"
+                        placeholder="Name"
+                        required
+                        className="input input-bordered w-full max-w-xs "
+                    />
+                    <input
                         type="Email"
                         placeholder="Email"
                         required
@@ -43,7 +49,7 @@ export default function Register() {
                         required
                         className="input input-bordered w-full max-w-xs"
                     />
-                        <input
+                    <input
                         type="Password"
                         placeholder="Confirm Password"
                         required
@@ -51,12 +57,12 @@ export default function Register() {
                     />
 
                     <button className="btn btn-primary text-white">
-                       Register 
+                        Register
                     </button>
                 </form>
 
                 <Link to={"/Login"} className="text-center text-sm">
-                    have an account?{" "}
+                    Already have an account?{" "}
                     <span className="text-blue-500">Sign In</span>
                 </Link>
             </div>
