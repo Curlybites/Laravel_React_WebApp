@@ -8,7 +8,7 @@ export default function ThemeChanger() {
         // 👆 false parameter is required for react project
     }, []);
     return (
-        <div className="ml-5  ">
+        <div className=" ">
             <details className="dropdown dropdown-end">
                 <summary className="btn btn-ghost m-1 font-normal text-sm">
                     Theme
@@ -19,7 +19,7 @@ export default function ThemeChanger() {
                         className="select select-sm w-full max-w-xs "
                     >
                         {Themes.map((theme, index) => (
-                            <option value={theme.color} key={index} >
+                            <option value={theme.color} key={index}>
                                 {theme.name}
                             </option>
                         ))}
