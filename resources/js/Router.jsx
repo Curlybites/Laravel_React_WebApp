@@ -18,10 +18,9 @@ const router = createBrowserRouter([
         element: <Register />,
     },
     {
-        path: "/Admin",
+        path: "/Admin/Dashboard",
         element: <AdminPage />,
     },
-    
 ]);
 
 export default router;
