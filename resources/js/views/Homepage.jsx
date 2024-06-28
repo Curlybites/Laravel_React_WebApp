@@ -8,7 +8,7 @@ export default function Homepage() {
     return (
         <div>
             <Navbar />
-            <MainContent />
+            <MainContent  />
             <ListContent />
         </div>
     );

@@ -5,7 +5,7 @@ export default function MainContent() {
     return (
         <>
             <Link>
-                <div className="card lg:card-side  mx-16 my-8">
+                <div className="card lg:card-side  mx-16 my-8 ">
                     <figure className="w-2/2 h-80">
                         <img
                             src="https://miro.medium.com/v2/resize:fit:3200/format:webp/1*c7CPwH-Dd-z-EuXCWt-nTQ.png"

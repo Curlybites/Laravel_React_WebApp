@@ -3,17 +3,17 @@ import React from "react";
 export default function ListContent() {
     return (
         <div class="mx-16 my-8">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
                 <div class="">
                     <div class="card bg-base-100">
-                        <figure className="w-2/2 h-80s">
+                        <figure className=" h-60">
                             <img
                                 src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
                                 alt="Shoes"
                                 className=""
                             />
                         </figure>
-                        <div className="card-body pt-4">
+                        <div className="flex flex-col ">
                             <h2 className="font-bold text-3xl mt-5">
                                 The Main Article
                             </h2>
@@ -48,14 +48,14 @@ export default function ListContent() {
                 </div>
                 <div class="">
                     <div class="card bg-base-100">
-                        <figure className="w-2/2 h-80s">
+                        <figure className="w-2/2 h-60">
                             <img
                                 src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
                                 alt="Shoes"
                                 className=""
                             />
                         </figure>
-                        <div className="card-body pt-4">
+                        <div className="flex flex-col ">
                             <h2 className="font-bold text-3xl mt-5">
                                 The Main Article
                             </h2>
@@ -90,14 +90,14 @@ export default function ListContent() {
                 </div>
                 <div class="">
                     <div class="card bg-base-100">
-                        <figure className="w-2/2 h-80s">
+                        <figure className="w-2/2 h-60">
                             <img
                                 src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
                                 alt="Shoes"
                                 className=""
                             />
                         </figure>
-                        <div className="card-body pt-4">
+                        <div className="flex flex-col ">
                             <h2 className="font-bold text-3xl mt-5">
                                 The Main Article
                             </h2>
@@ -130,6 +130,7 @@ export default function ListContent() {
                         </div>
                     </div>
                 </div>
+                
             </div>
         </div>
     );

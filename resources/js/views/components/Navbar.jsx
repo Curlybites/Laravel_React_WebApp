@@ -6,7 +6,7 @@ import ThemeChanger from "./ThemeChanger";
 
 export default function Navbar() {
     return (
-        <div className="navbar border-b-2 bg-base-100">
+        <div className="navbar border-b-2 bg-base-100  sticky top-0 left-0 z-10">
             <div className="flex-1 items-center justify-start">
                 <Link
                     to={"/"}
