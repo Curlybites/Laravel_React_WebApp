@@ -2,7 +2,8 @@ import { createBrowserRouter } from "react-router-dom";
 import Homepage from "./views/Homepage";
 import Login from "./views/Login";
 import Register from "./views/Register";
-import AdminPage from "./views/Admin/AdminPage";
+import AdminHome from "./views/Admin/AdminHome";
+import AdminArticle from "./views/Admin/AdminArticle";
 
 const router = createBrowserRouter([
     {
@@ -18,8 +19,12 @@ const router = createBrowserRouter([
         element: <Register />,
     },
     {
-        path: "/Admin/Dashboard",
-        element: <AdminPage />,
+        path: "/Admin/Home",
+        element: <AdminHome />,
+    },
+    {
+        path: "/Admin/Article",
+        element: <AdminArticle/>,
     },
 ]);
 
