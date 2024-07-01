@@ -14,9 +14,20 @@ export default function AdminPage() {
         <div className="w-full">
             <AdminNavbar />
             <div className="content">
-                <h1 className="text-xl font-bold m-5">Home</h1>
-                
-            </div>
+                    <div className="header m-5">
+                        <div className="navbar bg-base-100  border rounded-lg">
+                            <div className="flex-1">
+                                <h className="mx-4 font-bold text-xl ">
+                                  Home
+                                </h>
+                            </div>
+                            <div className="flex-none">
+                               
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
         </div>
     </div>
     );

@@ -1,6 +1,7 @@
 import React from "react";
 import AdminSidebar from "./components/AdminSidebar";
 import AdminNavbar from "./components/AdminNavbar";
+import ArticleTable from "./components/ArticleTable";
 
 export default function AdminArticle() {
     return (
@@ -9,77 +10,23 @@ export default function AdminArticle() {
             <div className="w-full">
                 <AdminNavbar />
                 <div className="content">
-                    <h1 className="text-xl font-bold m-5">Article </h1>
-                    <div className="table">
-                        <div className="overflow-x-auto mx-5 p-3 rounded-lg border ">
-                            <table className="table">
-                                {/* head */}
-                                <thead>
-                                    <tr>
-                                        <th>Number</th>
-                                        <th>Author</th>
-                                        <th>Title</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th>
-                                            <label>
-                                              1
-                                            </label>
-                                        </th>
-                                        <td>
-                                            <div className="flex items-center gap-3">
-                                                <div className="avatar">
-                                                    <div className="mask mask-squircle h-12 w-12">
-                                                        <img
-                                                            src="https://img.daisyui.com/tailwind-css-component-profile-4@56w.png"
-                                                            alt="Avatar Tailwind CSS Component"
-                                                        />
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <div className="font-bold">
-                                                        Marjy Ferencz
-                                                    </div>
-                                                    <div className="text-sm opacity-50">
-                                                        Russia
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                       
-                                          <h1 className="font-bold">Today My life begins</h1>
-                                          <h1 className="text-sm opacity-50">category</h1>
-                                         
-                                        </td>
-                                        <td>
-                                           <div className="flex gap-2">
-                                           <button className="text-info ">edit</button>
-                                           <button className="text-error">delete</button>
-                                           </div>
-                                        </td>
-                                     
-                                    </tr>
-                                    {/* row 4 */}
-
-                                    
-                                </tbody>
-                                {/* foot */}
-                                <tfoot>
-                                    <tr>
-                                        <th>Number</th>
-                                        <th>Author</th>
-                                        <th>Title</th>
-                                        <th>Action</th>
-                            
-                                    </tr>
-                                </tfoot>
-                            </table>
+                    <div className="header m-5">
+                        <div className="navbar bg-base-100  border rounded-lg">
+                            <div className="flex-1">
+                                <h className="mx-4 font-bold text-xl ">
+                                    Article
+                                </h>
+                            </div>
+                            <div className="flex-none">
+                                <button className="btn btn-outline btn-info btn-sm mx-3 ">
+                                    <h1 className="text-sm  font-normal">
+                                        Add Article
+                                    </h1>
+                                </button>
+                            </div>
                         </div>
                     </div>
+                    <ArticleTable />
                 </div>
             </div>
         </div>
