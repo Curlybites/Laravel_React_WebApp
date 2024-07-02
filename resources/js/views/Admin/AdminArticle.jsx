@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AdminSidebar from "./components/AdminSidebar";
 import AdminNavbar from "./components/AdminNavbar";
 import ArticleTable from "./components/ArticleTable";
+import { themeChange } from "theme-change";
 
 export default function AdminArticle() {
+    useEffect(() => {
+        themeChange(false);
+        // 👆 false parameter is required for react project
+    }, []);
     return (
         <div className="flex">
             <AdminSidebar />
