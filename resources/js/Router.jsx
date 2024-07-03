@@ -4,6 +4,7 @@ import Login from "./views/Login";
 import Register from "./views/Register";
 import AdminHome from "./views/Admin/AdminHome";
 import AdminArticle from "./views/Admin/AdminArticle";
+import AdminCategory from "./views/Admin/AdminCategory";
 
 const router = createBrowserRouter([
     {
@@ -24,7 +25,11 @@ const router = createBrowserRouter([
     },
     {
         path: "/Admin/Article",
-        element: <AdminArticle/>,
+        element: <AdminArticle />,
+    },
+    {
+        path: "/Admin/Category",
+        element: <AdminCategory />,
     },
 ]);
 
