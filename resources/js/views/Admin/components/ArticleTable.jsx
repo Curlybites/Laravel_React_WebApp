@@ -31,7 +31,7 @@ export default function ArticleTable() {
                                     </div>
                                     <div>
                                         <div className="font-bold">
-                                            Marjy Ferencz
+                                            Natoy
                                         </div>
                                         <div className="text-sm opacity-50">
                                             Russia

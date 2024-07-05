@@ -5,6 +5,8 @@ import Register from "./views/Register";
 import AdminHome from "./views/Admin/AdminHome";
 import AdminArticle from "./views/Admin/AdminArticle";
 import AdminCategory from "./views/Admin/AdminCategory";
+import AdminUser from "./views/Admin/AdminUser";
+
 
 const router = createBrowserRouter([
     {
@@ -30,6 +32,10 @@ const router = createBrowserRouter([
     {
         path: "/Admin/Category",
         element: <AdminCategory />,
+    },
+    {
+        path: "/Admin/User",
+        element: <AdminUser />,
     },
 ]);
 
